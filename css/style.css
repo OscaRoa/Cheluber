@@ -32,6 +32,23 @@ section article a {
   text-transform: capitalize; 
 }
 
+#button-g {
+  color: #ffffff;
+  font-size: 55px;
+  line-height: 80px;
+  width: 250px;
+  height: 250px;
+}
+
+#button-g i{
+  font-size: 100px;
+  color: #fff;
+  line-height: 250px;
+}
+
+#button-g a {
+  
+}
 .header{
   color: #383838;
 }
