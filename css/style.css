@@ -46,9 +46,11 @@ section article a {
   line-height: 250px;
 }
 
-#button-g a {
-  
+#map {
+  width: 100%;
+  height: 460px;
 }
+
 .header{
   color: #383838;
 }

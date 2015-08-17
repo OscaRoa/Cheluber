@@ -14,7 +14,7 @@
     </head>
 
     <body>
-    	<div class="container">
+    	<div class="">
 		    <section class="row">
 			    <section class="col s12">
 			      <ul class="tabs">
@@ -26,7 +26,12 @@
 			    </section>
 			    <article id="test1" class="col s12 yellowtail center">
 			    	<h1>Quieres chela...?!</h1>
-			    	<a id="button-g" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons"></i>Si</a>
+			    	<div class="row">
+				      	<div id="map"></div>
+			    	</div>
+			    	<!-- <div class="row">
+			    		<a id="button-g" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons"></i>Si</a>
+			    	</div> -->
 			    </article>
 			    <article id="test2" class="col s12 yellowtail center">
 			    	<h1>De cual quieres?!</h1>
@@ -55,7 +60,7 @@
 			    </article>
 			    <article id="test4" class="col s12 center">
 			    	<h1 class="yellowtail">Por favor revisa si todo esta chido...</h1>
-			    	<div class="row">
+			    	<div class="row container">
 				      <div class="col s12">
 				        <div class="card-panel">
 				          <table class="centered">
@@ -99,8 +104,10 @@
 
     <footer>
     	<!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
-      <script type="text/javascript" src="js/materialize.js"></script>
-      <script type="text/javascript" src="js/app.js"></script>
+    	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsZyDwNeFIFGiEYyzxzHaVzOLdOS5JER4" type="text/javascript"></script>
+    	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="js/materialize.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+
     </footer>
   </html>
