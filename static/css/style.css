@@ -11,11 +11,6 @@
   src: url("../font/Yellowtail-Regular.ttf") format("truetype");
 }
 
-.parallax {
-  height: 800px;
-  color: #383838;
-  background-color: #FFCD54;
-}
 .tab a {
   text-transform: capitalize;
 }
