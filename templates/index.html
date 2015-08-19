@@ -15,26 +15,47 @@
     </head>
 
     <body>
+      <nav class="yellow" role="navigation">
+	    <div class="nav-wrapper center">
+	      <a id="logo-container" href="" class="brand-logo">Cheluber</a>
+	      <!-- <ul class="right hide-on-med-and-down">
+	        <li><a href="#">Usuario</a></li>
+	      </ul> -->
+
+	      <ul id="nav-mobile" class="side-nav">
+	        <li><a href="#">Usuario</a></li>
+	      </ul>
+	      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+	    </div>
+	  </nav>
     	<div class="">
 		    <section class="row">
 			    <section class="col s12">
 			      <ul class="tabs">
-			        <li class="tab col s3"><a class="active yellowtail" href="#test1">Pide...</a></li>
-			        <li class="tab col s3"><a class="yellowtail" href="#test2">Elige...</a></li>
-			        <li class="tab col s3"><a class="yellowtail" href="#test3">Indica...</a></li>
-			        <li class="tab col s3"><a class="yellowtail" href="#test4">Confirma</a></li>
+			        <li class="tab col s3 title-step"><a class="active yellowtail" href="#pide">Pide...</a></li>
+			        <li class="tab col s3 title-step"><a class="yellowtail" href="#elige">Elige...</a></li>
+			        <li class="tab col s3 title-step"><a class="yellowtail" href="#indica">Indica...</a></li>
+			        <li class="tab col s3 title-step"><a class="yellowtail" href="#confirma">Confirma</a></li>
 			      </ul>
 			    </section>
-			    <article id="test1" class="col s12 yellowtail center">
-			    	<h1>Quieres chela...?!</h1>
-			    	<div class="row">
-				      	<div id="map"></div>
-			    	</div>
-			    	<!-- <div class="row">
-			    		<a id="button-g" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">room</i></a>
-			    	</div> -->
-			    </article>
-			    <article id="test2" class="col s12 yellowtail center">
+			    <article id="pide" class="col s12">
+		            <div class="row wrapper">
+		                <div id="map"></div>
+			            <div class="col s12 m12 l12">
+			            	<div class="card-panel over">
+				              <h5 class="yellowtail center">En donde es quieres chelas...?!</h5>
+			                	<span class="black-text">
+				                  	<div class="input-field col s12 m12 l12">
+				                  		<i class="material-icons prefix">search</i>
+				                    	<input id="icon_prefix" type="text" class="validate">
+				                    	<label for="icon_prefix">Ubicación...</label>
+				                  	</div>
+			                	</span>
+			            	</div>
+			            </div>
+		            </div>
+		        </article>
+			    <article id="elige" class="col s12 yellowtail center">
 			    	<h1>De cual quieres?!</h1>
 			    	<section class="section">
 			    		<ul id="dropdown2" class="dropdown-content">
@@ -48,7 +69,7 @@
 					<a class="btn dropdown-button" href="#!" data-activates="dropdown2">Marca<i class="mdi-navigation-arrow-drop-down right"></i></a>
 			    	</section>
 			    </article>
-			    <article id="test3" class="col s12 yellowtail center">
+			    <article id="indica" class="col s12 yellowtail center">
 			    	<h1>Cuanta quieres...?!</h1>
 			    	<div class="row">
 					    <form class="col s12">
@@ -61,7 +82,7 @@
 					    </form>
 					</div>
 			    </article>
-			    <article id="test4" class="col s12 center">
+			    <article id="confirma" class="col s12 center">
 			    	<h1 class="yellowtail">Por favor revisa si todo esta chido...</h1>
 			    	<div class="row container">
 				      <div class="col s12">

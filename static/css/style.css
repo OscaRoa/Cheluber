@@ -11,6 +11,24 @@
   src: url("../font/Yellowtail-Regular.ttf") format("truetype");
 }
 
+.card-panel {
+  padding: 5px 15px;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 3%;
+}
+
+.over {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  z-index: 99;
+  border-radius: 3%;
+}
+
+.wrapper {
+  position: relative;
+}
+
 .tab a {
   text-transform: capitalize;
 }
@@ -43,7 +61,14 @@ section article a {
 
 #map {
   width: 100%;
-  height: 460px;
+  height: 600px;
+}
+.yellow {
+  background-color: #FFCD54 !important; 
+}
+
+.title-step {
+  font-size: 1.5em;
 }
 
 .header{
@@ -52,15 +77,17 @@ section article a {
 
 nav ul a,
 nav .brand-logo {
-  color: #FFCD54;
+  color: #fff;
+  font-family: 'Yellowtail';
+  font-size: 3em;
+}
+
+.button-collapse {
+  color: #fff;
 }
 
 p {
   line-height: 2rem;
-}
-
-.button-collapse {
-  color: #FFCD54;
 }
 
 .parallax-container {
@@ -94,10 +121,7 @@ p {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
 }
