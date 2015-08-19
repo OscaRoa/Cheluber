@@ -63,12 +63,26 @@ section article a {
   width: 100%;
   height: 600px;
 }
+
+#indica-sig {
+  //background-color: #ffffff;
+  //border-radius: 40px;
+  //border-color: #FFCD54;
+  //border-style: solid;
+  color: #383838;
+  font-size: 1.5em;
+}
+
 .yellow {
   background-color: #FFCD54 !important; 
 }
 
 .title-step {
   font-size: 1.5em;
+}
+
+.separador {
+  padding: 20px 0px;
 }
 
 .header{
