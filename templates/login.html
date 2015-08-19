@@ -1,0 +1,67 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Cheluber - Login</title>
+	<link type="text/css" rel="stylesheet" href="{% static 'css/materialize.css' %}"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"/>
+</head>
+<body style="background-color: #FFCD54">
+	<div id="pageLoader">
+		<div class="row center">
+			<div class="separador"></div>
+			<div class="col m6 offset-m3 s10 offset-s1 center-aling">
+				<div class="separador"></div>
+				<img class="responsive-img" src="https://d13yacurqjgara.cloudfront.net/users/372480/screenshots/1975846/zedazeni-loader-2.gif" alt="">
+				<h1 class="yellowtail white-text">Cheluber</h1>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<!-- <div class="row">
+		    <form class="col s12">
+		      <div class="row">
+		        <div class="input-field col s6">
+		          <input id="first_name" type="text" class="validate">
+		          <label for="first_name">Nombre</label>
+		        </div>
+		        <div class="input-field col s6">
+		          <input id="last_name" type="text" class="validate">
+		          <label for="last_name">Apellido</label>
+		        </div>
+		      </div>
+		      <div class="row">
+		        <div class="input-field col s6">
+		          <input id="password" type="password" class="validate">
+		          <label for="password">Password</label>
+		        </div>
+		        <div class="input-field col s6">
+		          <input id="email" type="email" class="validate">
+		          <label for="email">Email</label>
+		        </div>
+		      </div>
+		    </form>
+		</div> -->
+		<div class="col-md-6 col-md-offset-3">
+			<div class="panel panel-with-logo">
+				<div class="panel-logo">
+					<img src="/assets/logo-square-08372b8efa870f96c332f19156625e6a1baa21ee3072e8db163f1f3cbb3b3853.png">
+				</div>
+				<div class="panel-inner">
+					<div class="panel-body text-center">
+						<a class="btn btn-primary" href="/auth/github"><i class="fa fa-github"></i> Sign up with GitHub</a>
+					</div><hr>
+					<div class="panel-body">
+						<a href="/users/sign_in">Sign in</a><br><a href="/users/confirmation/new">Didn't receive confirmation instructions?</a><br><a href="/users/unlock/new">Didn't receive unlock instructions?</a><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<footer>
+	<script type="text/javascript" src="{% static 'js/jquery-1.9.1.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/loader.js' %}"></script>
+</footer>
+</html>
