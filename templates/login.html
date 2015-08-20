@@ -7,14 +7,14 @@
 	<link type="text/css" rel="stylesheet" href="{% static 'css/materialize.css' %}"  media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"/>
 </head>
-<body style="background-color: #FFCD54">
+<body style="background-color: #201F1E">
 	<div id="pageLoader">
 		<div class="row center">
 			<div class="separador"></div>
 			<div class="col m6 offset-m3 s10 offset-s1 center-aling">
 				<div class="separador"></div>
-				<img class="responsive-img" src="https://d13yacurqjgara.cloudfront.net/users/372480/screenshots/1975846/zedazeni-loader-2.gif" alt="">
-				<h1 class="yellowtail white-text">Cheluber</h1>
+				<img class="responsive-img" src="{% static 'img/beerloader.gif' %}" alt="loader">
+				<img class="responsive-img" src="{% static 'img/logo-i.svg' %}" alt="logo">
 			</div>
 		</div>
 	</div>
@@ -43,19 +43,11 @@
 		      </div>
 		    </form>
 		</div> -->
-		<div class="col-md-6 col-md-offset-3">
-			<div class="panel panel-with-logo">
-				<div class="panel-logo">
-					<img src="/assets/logo-square-08372b8efa870f96c332f19156625e6a1baa21ee3072e8db163f1f3cbb3b3853.png">
-				</div>
-				<div class="panel-inner">
-					<div class="panel-body text-center">
-						<a class="btn btn-primary" href="/auth/github"><i class="fa fa-github"></i> Sign up with GitHub</a>
-					</div><hr>
-					<div class="panel-body">
-						<a href="/users/sign_in">Sign in</a><br><a href="/users/confirmation/new">Didn't receive confirmation instructions?</a><br><a href="/users/unlock/new">Didn't receive unlock instructions?</a><br>
-					</div>
-				</div>
+		<div class="row">
+			<div class="col s3">
+				<!-- <div class="panel panel-with-logo">
+				</div> -->
+				<img class="responsive-img" src="{% static 'img/logo-i.svg' %}" alt="">
 			</div>
 		</div>
 	</div>

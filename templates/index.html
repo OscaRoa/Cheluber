@@ -6,7 +6,6 @@
 	  <title>Cheluber</title>
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.css' %}"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="{% static 'css/fonts.css' %}"/>
       <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -14,7 +13,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
-    <body>
+    <body style="background-color: ">
       <nav class="yellow" role="navigation">
 	    <div class="nav-wrapper center">
 	      <a id="logo-container" href="#" class="brand-logo">Cheluber</a>
@@ -51,19 +50,55 @@
 			            </div>
 		            </div>
 		        </article>
-			    <article id="elige" class="col s12 yellowtail center">
-			    	<h1>De cual quieres?!</h1>
-			    	<div class="separador"></div>
+			    <article style="background-color: " id="elige" class="col s12 center">
+			    	<h1 class="yellowtail">De cual quieres?!</h1>
 			    	<section class="section">
-			    		<ul id="dropdown2" class="dropdown-content">
-			    		<li><a href="#!">Corona<span class="badge"></span></a></li>
-						<li><a href="#!">Modelo<span class="badge"></span></a></li>
-						<li><a href="#!">Indio<span class="badge"></span></a></li>
-						<li><a href="#!">Victoria</a></li>
-						<li><a href="#!">XX Lager<span class="new badge"></span></a></li>
-						<li><a href="#!">Leon<span class="new badge"></span></a></li>
-					</ul>
-					<a class="btn dropdown-button" href="#!" data-activates="dropdown2">Marca<i class="mdi-navigation-arrow-drop-down right"></i></a>
+						<div class="row">
+					        <div class="col s12 m6 l3">
+					          <div class="card smal">
+					            <div class="card-image">
+					              <img class="responsive-img" src="{% static 'img/corona.jpg' %}">
+					              <span class="card-title"></span>
+					            </div>
+					            <div class="card-content">
+					              <p>Corona Extra</p>
+					            </div>
+					          </div>
+					        </div>
+					        <div class="col s12 m6 l3">
+					          <div class="card smal">
+					            <div class="card-image">
+					              <img class="responsive-img" src="{% static 'img/heineken.png' %}">
+					              <span class="card-title"></span>
+					            </div>
+					            <div class="card-content">
+					              <p>Heineken</p>
+					            </div>
+					          </div>
+					        </div>
+					        <div class="col s12 m6 l3">
+					          <div class="card smal">
+					            <div class="card-image">
+					              <img class="responsive-img" src="{% static 'img/victoria.jpg' %}">
+					              <span class="card-title"></span>
+					            </div>
+					            <div class="card-content">
+					              <p>Victoria</p>
+					            </div>
+					          </div>
+					        </div>
+					        <div class="col s12 m6 l3">
+					          <div class="card smal">
+					            <div class="card-image">
+					              <img class="responsive-img" src="{% static 'img/heineken.png' %}">
+					              <span class="card-title"></span>
+					            </div>
+					            <div class="card-content">
+					              <p>Corona Extra</p>
+					            </div>
+					          </div>
+					        </div>
+					    </div>
 			    	</section>
 			    </article>
 			    <article id="indica" class="col s12 yellowtail center">
