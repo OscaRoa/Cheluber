@@ -5598,14 +5598,14 @@ small {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: 20px; }
     .card .card-action a {
-      color: #ffab40;
+      color: #fff;
       margin-right: 20px;
       -webkit-transition: color .3s ease;
       -moz-transition: color .3s ease;
       -o-transition: color .3s ease;
       -ms-transition: color .3s ease;
       transition: color .3s ease;
-      text-transform: uppercase; }
+      text-transform: capitalize; }
       .card .card-action a:hover {
         color: #ffd8a6; }
   .card .card-reveal {
