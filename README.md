@@ -1,6 +1,6 @@
 ## Cheluber
 
-![alt tag](https://raw.githubusercontent.com/OscaRoa/Cheluber/develop/img/cheluber.png)
+![alt tag](https://raw.githubusercontent.com/Cheluber/Cheluber/develop/static/img/logo.png)
 ===========
 
 ## Build with:

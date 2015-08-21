@@ -1,0 +1,75 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Cheluber - Login</title>
+	<link type="text/css" rel="stylesheet" href="{% static 'css/materialize.css' %}" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body id="full-screen-background-image">
+	<!-- style="background-color: #201F1E" -->
+	<div id="pageLoader">
+		<div class="row center">
+			<div class="separador"></div>
+			<div class="col m6 offset-m3 s10 offset-s1 center-aling">
+				<div class="separador"></div>
+				<img class="responsive-img" src="{% static 'img/beerloader.gif' %}" alt="loader">
+				<img class="responsive-img" src="{% static 'img/logo-i.svg' %}" alt="logo">
+			</div>
+		</div>
+	</div>
+	<div class="hero"></div>
+	<div id="wrapper-l" class="container">
+		<div class="separador"></div>
+		<div class="row">
+			<div class="col s12 m6 l12 center">
+				<img src="{% static 'img/logo-i.svg' %}" alt="logo">
+				<div class="card card-login">
+					<div class="card-content black-text">
+                        <a type="submit" class="waves-effect waves-light btn btn-fb" href="http://localhost:8000/home/"><i class="material-icons left"></i>Sign up with Facebook</a>
+						<div class="row">
+							<form class="col s12" method="post" action="/home/">
+                                {% csrf_token  %}
+								<div class="row">
+									<div class="input-field col s6">
+										<input id="first_name" type="text" class="validate" required>
+										<label for="first_name">Nombre</label>
+									</div>
+									<div class="input-field col s6">
+										<input id="last_name" type="text" class="validate" required>
+										<label for="last_name">Apellido</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<input id="email" type="email" class="validate" required>
+										<label for="email">Email</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<input id="password" type="password" class="validate" required>
+										<label for="password">Password</label>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="card-action">
+						<input type="submit" class="waves-effect waves-teal btn-flat btn-sign" value="Sing Up">
+						<input type="submit" class="waves-effect waves-teal btn-flat btn-sign" value="Sign In">
+					</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<footer>
+	<script type="text/javascript" src="{% static 'js/jquery-1.9.1.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/loader.js' %}"></script>
+</footer>
+
+</html>

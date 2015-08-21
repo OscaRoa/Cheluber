@@ -6,7 +6,6 @@
 	  <title>Cheluber</title>
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.css' %}"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="{% static 'css/fonts.css' %}"/>
       <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -14,57 +13,116 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
-    <body>
+    <body style="background-color: #2D2A2F;">
+    <div style="background-color: #2D2A2F; " class="container card center app">
+    	<nav class="yellow" role="navigation">
+	    <div class="nav-wrapper center">
+	      <a id="logo-container" href="#" class="brand-logo">Cheluber</a>
+	      <ul id="nav-mobile" class="side-nav">
+	        <li><a href="#">Usuario</a></li>
+	      </ul>
+	      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+	    </div>
+	  </nav>
     	<div class="">
-		    <section class="row">
+		    <section class="row aplication">
 			    <section class="col s12">
-			      <ul class="tabs">
-			        <li class="tab col s3"><a class="active yellowtail" href="#test1">Pide...</a></li>
-			        <li class="tab col s3"><a class="yellowtail" href="#test2">Elige...</a></li>
-			        <li class="tab col s3"><a class="yellowtail" href="#test3">Indica...</a></li>
-			        <li class="tab col s3"><a class="yellowtail" href="#test4">Confirma</a></li>
+			      <ul style="background-color: #2D2A2F ; " class="tabs">
+			        <li class="tab col s3 title-step"><a class="active yellowtail" href="#pide">Pide...</a></li>
+			        <li class="tab col s3 title-step"><a class="yellowtail" href="#elige">Elige...</a></li>
+			        <li class="tab col s3 title-step"><a class="yellowtail" href="#indica">Indica...</a></li>
+			        <li class="tab col s3 title-step"><a class="yellowtail" href="#confirma">Confirma</a></li>
 			      </ul>
 			    </section>
-			    <article id="test1" class="col s12 yellowtail center">
-			    	<h1>Quieres chela...?!</h1>
-			    	<div class="row">
-				      	<div id="map"></div>
-			    	</div>
-			    	<!-- <div class="row">
-			    		<a id="button-g" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">room</i></a>
-			    	</div> -->
-			    </article>
-			    <article id="test2" class="col s12 yellowtail center">
-			    	<h1>De cual quieres?!</h1>
-			    	<section class="section">
-			    		<ul id="dropdown2" class="dropdown-content">
-			    		<li><a href="#!">Corona<span class="badge"></span></a></li>
-						<li><a href="#!">Modelo<span class="badge"></span></a></li>
-						<li><a href="#!">Indio<span class="badge"></span></a></li>
-						<li><a href="#!">Victoria</a></li>
-						<li><a href="#!">XX Lager<span class="new badge"></span></a></li>
-						<li><a href="#!">Leon<span class="new badge"></span></a></li>
-					</ul>
-					<a class="btn dropdown-button" href="#!" data-activates="dropdown2">Marca<i class="mdi-navigation-arrow-drop-down right"></i></a>
+			    <article id="pide" class="col s12">
+		            <div id="map" class="row wrapper">
+			            <!-- <div class="col s12 m12 l12">
+			            	<div class="card-panel over">
+				              <h5 class="yellowtail center">En donde es quieres chelas...?!</h5>
+			                	<span class="black-text">
+				                  	<div class="input-field col s12 m12 l12">
+				                  		<i class="material-icons prefix">search</i>
+				                    	<input id="icon_prefix" type="text" class="validate">
+				                    	<label for="icon_prefix">Ubicación...</label>
+				                  	</div>
+			                	</span>
+			            	</div>
+			            </div> -->
+		            </div>
+		        </article>
+			    <article id="elige" class="col s12 center">
+			    	<h1 class="yellowtail">De cual quieres?!</h1>
+			    	<section style="padding: 0px 15px;" class="section scroll">
+						<div class="row">
+					        <div class="col s12 m6 l3">
+					          <div class="card smal center">
+					            <div class="card-image">
+					              <img class="responsive-img" src="{% static 'img/corona.jpg' %}">
+					              <span class="card-title"> Corona Extra</span>
+					            </div>
+					            <div class="card-content">
+					              <a class="btn-e waves-effect waves-light btn">Box</a>
+					              <a class="btn-e waves-effect waves-light btn">Six</a>
+					            </div>
+					          </div>
+					        </div>
+					        <div class="col s12 m6 l3">
+					          <div class="card smal">
+					            <div class="card-image">
+					              <img class="responsive-img" src="{% static 'img/heineken.png' %}">
+					              <span class="card-title black-text">Heineken</span>
+					            </div>
+					            <div class="card-content">
+					              <a class="btn-e waves-effect waves-light btn">Box</a>
+					              <a class="btn-e waves-effect waves-light btn">Six</a>
+					            </div>
+					          </div>
+					        </div>
+					        <div class="col s12 m6 l3">
+					          <div class="card smal">
+					            <div class="card-image">
+					              <img class="responsive-img" src="{% static 'img/victoria.jpg' %}">
+					              <span class="card-title black-text">Victoria</span>
+					            </div>
+					            <div class="card-content">
+					            	<a class="btn-e waves-effect waves-light btn">Box</a>
+					            	<a class="btn-e waves-effect waves-light btn">Six</a>
+					            </div>
+					          </div>
+					        </div>
+					        <div class="col s12 m6 l3">
+					          <div class="card smal">
+					            <div class="card-image">
+					              <img class="responsive-img" src="{% static 'img/indio.jpg' %}">
+					              <span class="card-title">Indio</span>
+					            </div>
+					            <div class="card-content">
+					            	<a class="btn-e waves-effect waves-light btn">Box</a>
+					            	<a class="btn-e waves-effect waves-light btn">Six</a>
+					            </div>
+					          </div>
+					        </div>
+					    </div>
 			    	</section>
 			    </article>
-			    <article id="test3" class="col s12 yellowtail center">
-			    	<h1>Cuanta quieres...?!</h1>
-			    	<div class="row">
-					    <form class="col s12">
-					      <div class="row">
-					        <div class="input-field col s3 offset-s5">
-					          <input class="center" id="icon_prefix" type="number" class="validate">
-					          <label for="icon_prefix">Cantidad</label>
-					        </div>
-					      </div>
-					    </form>
-					</div>
+			    <article id="indica" class="col s12 center">
+			    	<h1 class="yellowtail" >Cuantas quieres...?!</h1>
+			    	<div class="separador"></div>
+				      <div class="row">
+				        <div class="col s12">
+				        <!-- <img style="border-radius: 100px;" class="responsive-img" src="{% static 'img/box_take.jpg' %}"> -->
+				        <div class="separador"></div>
+				        	<a class="btn-floating btn-large waves-effect waves-light red">2</a>
+				        	<a class="btn-floating btn-large waves-effect waves-light red">4</a>
+				        	<a class="btn-floating btn-large waves-effect waves-light red">6</a>
+				        	<a class="btn-floating btn-large waves-effect waves-light red">8</a>
+				        </div>
+				      </div>
 			    </article>
-			    <article id="test4" class="col s12 center">
+			    <article id="confirma" class="col s12 center">
 			    	<h1 class="yellowtail">Por favor revisa si todo esta chido...</h1>
 			    	<div class="row container">
-				      <div class="col s12">
+				      <div class="col offset-s3 s12">
 				        <div class="card-panel">
 				          <table class="centered">
 					        <thead>
@@ -77,13 +135,13 @@
 					        <tbody>
 					          <tr>
 					            <td>Modelo</td>
-					            <td>20</td>
+					            <td>2</td>
 					            <td>$200.87</td>
 					          </tr>
 					          <tr>
-					            <td>Leon</td>
-					            <td>10</td>
-					            <td>$99.76</td>
+					            <td>Cargo</td>
+					            <td></td>
+					            <td>$20.00</td>
 					          </tr>
 					        </tbody>
 					      </table>
@@ -91,16 +149,37 @@
 				      </div>
 				    </div>
 				    <div class="row">
-				    	<article class="col s6 yellowtail">
-				    		<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">skip_previous</i></a>
+				    	<article class="col s6">
+				    		<a class="waves-effect waves-light btn">Atras...</a>
 				    	</article>
-				    	<article class="col s6 yellowtail">
-				    		<a class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">done_all</i></a>
+				    	<article class="col s6">
+				    		<a id="hide" class="waves-effect waves-light btn">Confirma</a>
 				    	</article>
 				    </div>
 			    </article>
 			</section>
+			<section id="hidden" class="row">
+				<section class="col s12">
+			      <ul style="background-color: #2D2A2F ; " class="tabs">
+			        <li class="tab col s3 title-step"><a class="yellowtail" href="#pedido">Pedido...</a></li>
+			      </ul>
+			    </section>
+			    <article id="pedido" class="col s12">
+		            <div id="map-beer"></div>
+		            <div class="separador"></div>
+		            <div class="row">
+				    	<article class="col s6">
+				    		<a class="waves-effect waves-light btn">Atras...</a>
+				    	</article>
+				    	<article class="col s6">
+				    		<a id="hide" class="waves-effect waves-light btn">Confirma</a>
+				    	</article>
+				    </div>
+		        </article>
+			</section>
 		</div>
+    </div>
+
     </body>
 
     <footer>
