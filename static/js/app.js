@@ -18,13 +18,22 @@ $(document).ready(function(){
 
 	    	var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-	    	var map = new google.maps.Map(document.getElementById('map-beer'), mapOptions);
-
 	    	var marker = new google.maps.Marker({
 	    		draggable: true,
 	    		animation: google.maps.Animation.DROP,
 	    		position: LatLng,
 	    		map: map,
+	    		icon: mapOptions.image,
+	    		title:"Tu estas aqui"
+	    	});
+
+	    	var mapper = new google.maps.Map(document.getElementById('map-beer'), mapOptions);
+
+	    	var markerb = new google.maps.Marker({
+	    		draggable: true,
+	    		animation: google.maps.Animation.DROP,
+	    		position: LatLng,
+	    		map: mapper,
 	    		icon: mapOptions.image,
 	    		title:"Tu estas aqui"
 	    	});
