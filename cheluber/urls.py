@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.login, name='login'),
     url(r'^home/', views.landingPage, name='home'),
+    url(r'^home/pedido/', views.pedido name='pedido'),
 ]
