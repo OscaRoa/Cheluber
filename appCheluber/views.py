@@ -6,6 +6,3 @@ def login(req):
 
 def landingPage(req):
     return render(req, 'index.html')
-
-def pedido(req):
-    return render(req, 'pedido.html')
