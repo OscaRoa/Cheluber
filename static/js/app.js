@@ -18,6 +18,8 @@ $(document).ready(function(){
 
 	    	var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
+	    	var map = new google.maps.Map(document.getElementById('map-beer'), mapOptions);
+
 	    	var marker = new google.maps.Marker({
 	    		draggable: true,
 	    		animation: google.maps.Animation.DROP,
@@ -49,5 +51,10 @@ $(document).ready(function(){
 	$('#indica-sig').bind('click', function() {
 		$('ul.tabs').tabs('select_tab', 'confirma');
 	});
-	
+
+	$('#hide').click(function() {
+            $('.aplication').slideToggle("fast");
+    		document.getElementById("hidden").style.display = 'block';
+    });
+
 });
