@@ -19,19 +19,19 @@ html, body {
 }
 .app {
   height: calc(100% - 38px);
-  width: calc(97% );
+  width: calc(91% );
   position: relative;
   margin: 0 auto;
   top: 19px;
   z-index: 2;
   border-radius: 3px;
-  overflow: hidden;
-  //overflow-y: auto;
+  overflow-y: auto;
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
   -webkit-animation: app-enter .3s;
   animation: app-enter .3s;
+  border-bottom: 3px #FFCD54 ;
 }
 #pageLoader {
   position: fixed;
@@ -73,6 +73,14 @@ html, body {
 
 .card-button {
   text-transform: capitalize;
+}
+
+.card-content .btn-e {
+  background-color: #2D2A2F;
+}
+
+.card-content .btn-e:hover {
+  color: #FFCD54;
 }
 
 .cont {
@@ -122,6 +130,9 @@ html, body {
   //margin: 5% auto;
   color: #fff;
 }
+.scroll {
+  //overflow-y: auto;
+}
 
 #pide{
   padding: 0px;
@@ -138,12 +149,12 @@ section article a {
   text-transform: capitalize;
 }
 .yellowtail {
-  color: #383838;
+  color: #fff;
   font-family: "Yellowtail";
 }
 
 .yellowtail a {
-  color: #383838;
+  color: #fff;
   text-transform: capitalize; 
 }
 
@@ -162,8 +173,9 @@ section article a {
 }
 
 #map {
+  top: 0;
   width: 100%;
-  height: 550px;
+  height: 450px;
 }
 
 #indica-sig {
@@ -181,6 +193,7 @@ section article a {
 
 .title-step {
   font-size: 1.5em;
+  color: #FFF;
 }
 
 .separador {

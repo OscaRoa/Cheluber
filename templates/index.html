@@ -13,8 +13,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
-    <body style="background-color: ">
-    <div class="container card center app">
+    <body style="background-color: #2D2A2F;">
+    <div style="background-color: #2D2A2F; " class="container card center app">
     	<nav class="yellow" role="navigation">
 	    <div class="nav-wrapper center">
 	      <a id="logo-container" href="#" class="brand-logo">Cheluber</a>
@@ -26,8 +26,8 @@
 	  </nav>
     	<div class="">
 		    <section class="row">
-			    <section class="cont col s12">
-			      <ul class="tabs">
+			    <section class="col s12">
+			      <ul style="background-color: #2D2A2F ; " class="tabs">
 			        <li class="tab col s3 title-step"><a class="active yellowtail" href="#pide">Pide...</a></li>
 			        <li class="tab col s3 title-step"><a class="yellowtail" href="#elige">Elige...</a></li>
 			        <li class="tab col s3 title-step"><a class="yellowtail" href="#indica">Indica...</a></li>
@@ -35,8 +35,7 @@
 			      </ul>
 			    </section>
 			    <article id="pide" class="col s12">
-		            <div class="row wrapper">
-		                <div id="map"></div>
+		            <div id="map" class="row wrapper">
 			            <!-- <div class="col s12 m12 l12">
 			            	<div class="card-panel over">
 				              <h5 class="yellowtail center">En donde es quieres chelas...?!</h5>
@@ -53,16 +52,17 @@
 		        </article>
 			    <article id="elige" class="col s12 center">
 			    	<h1 class="yellowtail">De cual quieres?!</h1>
-			    	<section class="section">
+			    	<section style="padding: 0px 15px;" class="section scroll">
 						<div class="row">
 					        <div class="col s12 m6 l3">
-					          <div class="card smal">
+					          <div class="card smal center">
 					            <div class="card-image">
 					              <img class="responsive-img" src="{% static 'img/corona.jpg' %}">
-					              <span class="card-title"></span>
+					              <span class="card-title"> Corona Extra</span>
 					            </div>
 					            <div class="card-content">
-					              <p>Corona Extra</p>
+					              <a class="btn-e waves-effect waves-light btn">Box</a>
+					              <a class="btn-e waves-effect waves-light btn">Six</a>
 					            </div>
 					          </div>
 					        </div>
@@ -70,10 +70,11 @@
 					          <div class="card smal">
 					            <div class="card-image">
 					              <img class="responsive-img" src="{% static 'img/heineken.png' %}">
-					              <span class="card-title"></span>
+					              <span class="card-title black-text">Heineken</span>
 					            </div>
 					            <div class="card-content">
-					              <p>Heineken</p>
+					              <a class="btn-e waves-effect waves-light btn">Box</a>
+					              <a class="btn-e waves-effect waves-light btn">Six</a>
 					            </div>
 					          </div>
 					        </div>
@@ -81,44 +82,42 @@
 					          <div class="card smal">
 					            <div class="card-image">
 					              <img class="responsive-img" src="{% static 'img/victoria.jpg' %}">
-					              <span class="card-title"></span>
+					              <span class="card-title black-text">Victoria</span>
 					            </div>
 					            <div class="card-content">
-					              <p>Victoria</p>
+					            	<a class="btn-e waves-effect waves-light btn">Box</a>
+					            	<a class="btn-e waves-effect waves-light btn">Six</a>
 					            </div>
 					          </div>
 					        </div>
 					        <div class="col s12 m6 l3">
 					          <div class="card smal">
 					            <div class="card-image">
-					              <img class="responsive-img" src="{% static 'img/heineken.png' %}">
-					              <span class="card-title"></span>
+					              <img class="responsive-img" src="{% static 'img/indio.jpg' %}">
+					              <span class="card-title">Indio</span>
 					            </div>
 					            <div class="card-content">
-					              <p>Corona Extra</p>
+					            	<a class="btn-e waves-effect waves-light btn">Box</a>
+					            	<a class="btn-e waves-effect waves-light btn">Six</a>
 					            </div>
 					          </div>
 					        </div>
 					    </div>
 			    	</section>
 			    </article>
-			    <article id="indica" class="col s12 yellowtail center">
-			    	<h1>Cuantas quieres...?!</h1>
+			    <article id="indica" class="col s12 center">
+			    	<h1 class="yellowtail" >Cuantas quieres...?!</h1>
 			    	<div class="separador"></div>
-			    	<div class="row">
-					    <form class="col s12">
-					      <div class="row">
-					        <div class="input-field col s4 offset-s4">
-					          <input class="center" id="icon_prefix" type="number" class="validate">
-					          <label for="icon_prefix">Cantidad</label>
-					        </div>
-					        <div class="col s12">
-					        <div class="separador"></div>
-					        	<a id="indica-sig" class="waves-effect waves-teal btn-flat"><i class="material-icons right">done</i>Siguiente</a>
-					        </div>
-					      </div>
-					    </form>
-					</div>
+				      <div class="row">
+				        <div class="col s12">
+				        <!-- <img style="border-radius: 100px;" class="responsive-img" src="{% static 'img/box_take.jpg' %}"> -->
+				        <div class="separador"></div>
+				        	<a class="btn-floating btn-large waves-effect waves-light red">2</a>
+				        	<a class="btn-floating btn-large waves-effect waves-light red">4</a>
+				        	<a class="btn-floating btn-large waves-effect waves-light red">6</a>
+				        	<a class="btn-floating btn-large waves-effect waves-light red">8</a>
+				        </div>
+				      </div>
 			    </article>
 			    <article id="confirma" class="col s12 center">
 			    	<h1 class="yellowtail">Por favor revisa si todo esta chido...</h1>
