@@ -17,7 +17,22 @@ html, body {
   padding: 0;
   margin: 0;
 }
-
+.app {
+  height: calc(100% - 38px);
+  width: calc(97% );
+  position: relative;
+  margin: 0 auto;
+  top: 19px;
+  z-index: 2;
+  border-radius: 3px;
+  overflow: hidden;
+  //overflow-y: auto;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: app-enter .3s;
+  animation: app-enter .3s;
+}
 #pageLoader {
   position: fixed;
   width: 100%;
@@ -26,6 +41,11 @@ html, body {
   left: 0px;
   z-index: 999;
   background-color: #201F1E;
+}
+
+.black-g {
+  background-color: #201F1E;
+  opacity: .95;
 }
 
 .btn-fb {

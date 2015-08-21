@@ -49,5 +49,5 @@ $(document).ready(function(){
 	$('#indica-sig').bind('click', function() {
 		$('ul.tabs').tabs('select_tab', 'confirma');
 	});
-
+	
 });
